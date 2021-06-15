@@ -27,7 +27,7 @@
   padding: 20px;
 }
 
-.subContainer1 {
+.subContainer1, .subContainer2 {
   align-self: end;
   border-radius: 5px 80px 5px 5px;
 }

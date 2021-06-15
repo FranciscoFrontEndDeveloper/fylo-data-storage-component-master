@@ -7,6 +7,13 @@ $DarkBlue: hsl(228, 56%, 26%)
 $VeryDarkBlue: hsl(229, 57%, 11%)
 $Fontsize: 14px
 $FamilyRaleway:'Raleway', sans-serif
+//<!-- '[mixins]' -->
+@mixin subContainer()
+ background: $DarkBlue
+ width: 80%
+ height: 150px
+ padding: 20px 
+ 
 //<!-- '[main]' -->
 .main
  display: grid
@@ -27,18 +34,15 @@ $FamilyRaleway:'Raleway', sans-serif
  align-items: center
  row-gap: 15px
 
-.subContainer1, .subContainer2
- background: $DarkBlue
- width: 80%
- height: 150px
- padding: 20px 
-
+.subContainer1
+ @include subContainer
 
 .subContainer1
  align-self: end
  border-radius: 5px 80px 5px 5px
 
 .subContainer2
+ @extend .subContainer1
  align-self: start
  border-radius: 10px
 
