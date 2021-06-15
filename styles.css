@@ -1,0 +1,18 @@
+.containerFooter {
+  display: grid;
+  justify-items: center;
+  background: #000;
+  width: 100%;
+}
+.containerFooter h3 {
+  color: #fff;
+  text-align: center;
+}
+.containerFooter a {
+  color: #FF3F00;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.containerFooter a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */
