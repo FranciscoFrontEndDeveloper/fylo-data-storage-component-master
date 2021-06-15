@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap')
 //<!-- '[variables]' -->
-
+$Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
+$PaleBlue: hsl(243, 100%, 93%)
+$GrayishBlue: hsl(229, 7%, 55%)
+$DarkBlue: hsl(228, 56%, 26%)
+$VeryDarkBlue: hsl(229, 57%, 11%)
+$Fontsize: 14px
+$FamilyRaleway:'Raleway', sans-serif
 //<!-- '[main]' -->
 .main
  display: grid
@@ -21,17 +28,42 @@
  row-gap: 15px
 
 .subContainer1, .subContainer2
- background: white
+ background: $DarkBlue
  width: 80%
  height: 150px
+ padding: 20px 
+
 
 .subContainer1
  align-self: end
+ border-radius: 5px 80px 5px 5px
 
 .subContainer2
  align-self: start
+ border-radius: 10px
 
-
+.subContainer1__controls, .subContainer2__controls
+ width: 90%
+ height: 100%
+ display: grid
+ grid-template-columns: repeat(3,1fr )
+ grid-template-rows: repeat(2,1fr )
+ grid-template-areas: 'logo logo logo' 'document folder upload'
+ img
+  width: 60%
+  grid-area: logo
+ input
+  background: #000
+  padding: 10px
+  border-radius: 8px
+  width: 40px
+  height: 40px
+ input:nth-child(1)
+  grid-area: document
+ input:nth-child(2)
+  grid-area: folder
+ input:nth-child(3)
+  grid-area: upload
 
 
 
