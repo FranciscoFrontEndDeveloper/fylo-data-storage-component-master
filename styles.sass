@@ -33,6 +33,7 @@ $FamilyRaleway:'Raleway', sans-serif
  grid-template-rows: 1fr 1fr
  align-items: center
  row-gap: 15px
+ font-family: $FamilyRaleway
 
 .subContainer1
  @include subContainer
@@ -45,6 +46,24 @@ $FamilyRaleway:'Raleway', sans-serif
  @extend .subContainer1
  align-self: start
  border-radius: 10px
+.subContainer3
+  background: white
+  position: absolute
+  bottom: 93px
+  left: 83px
+  padding: 20px
+  border-radius: 10px
+  display: grid
+  grid-template-columns: repeat(2,auto )
+  align-items: center
+  strong
+    margin-right: 10px
+    font-size: 34px
+  span
+    color: $GrayishBlue
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 14px
 
 .subContainer1__controls
  width: 90%
@@ -75,6 +94,7 @@ $FamilyRaleway:'Raleway', sans-serif
   row-gap: 10px
   p
     color: $PaleBlue
+    font-size: 13px
 .subContainer2__controls--progressBar
   background: $VeryDarkBlue
   border-radius: 40px
@@ -98,6 +118,7 @@ $FamilyRaleway:'Raleway', sans-serif
   justify-content: space-between
   strong
     color: $PaleBlue
+    font-size: 14px
 
 
 

@@ -18,6 +18,7 @@
   grid-template-rows: 1fr 1fr;
   align-items: center;
   row-gap: 15px;
+  font-family: "Raleway", sans-serif;
 }
 
 .subContainer1, .subContainer2 {
@@ -35,6 +36,28 @@
 .subContainer2 {
   align-self: start;
   border-radius: 10px;
+}
+
+.subContainer3 {
+  background: white;
+  position: absolute;
+  bottom: 93px;
+  left: 83px;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+}
+.subContainer3 strong {
+  margin-right: 10px;
+  font-size: 34px;
+}
+.subContainer3 span {
+  color: #848794;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .subContainer1__controls {
@@ -73,6 +96,7 @@
 }
 .subContainer2__controls p {
   color: #dddbff;
+  font-size: 13px;
 }
 
 .subContainer2__controls--progressBar {
@@ -103,6 +127,7 @@
 }
 .subContainer2__controls--infoDownload strong {
   color: #dddbff;
+  font-size: 14px;
 }
 
 .containerFooter {
