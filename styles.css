@@ -37,7 +37,7 @@
   border-radius: 10px;
 }
 
-.subContainer1__controls, .subContainer2__controls {
+.subContainer1__controls {
   width: 90%;
   height: 100%;
   display: grid;
@@ -45,25 +45,64 @@
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "logo logo logo" "document folder upload";
 }
-.subContainer1__controls img, .subContainer2__controls img {
+.subContainer1__controls img {
   width: 60%;
   grid-area: logo;
 }
-.subContainer1__controls input, .subContainer2__controls input {
-  background: #000;
+.subContainer1__controls input {
+  background: #0c122c;
   padding: 10px;
   border-radius: 8px;
   width: 40px;
   height: 40px;
 }
-.subContainer1__controls input:nth-child(1), .subContainer2__controls input:nth-child(1) {
+.subContainer1__controls input:nth-child(1) {
   grid-area: document;
 }
-.subContainer1__controls input:nth-child(2), .subContainer2__controls input:nth-child(2) {
+.subContainer1__controls input:nth-child(2) {
   grid-area: folder;
 }
-.subContainer1__controls input:nth-child(3), .subContainer2__controls input:nth-child(3) {
+.subContainer1__controls input:nth-child(3) {
   grid-area: upload;
+}
+
+.subContainer2__controls {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 10px;
+}
+.subContainer2__controls p {
+  color: #dddbff;
+}
+
+.subContainer2__controls--progressBar {
+  background: #0c122c;
+  border-radius: 40px;
+  padding: 2px 2px;
+}
+.subContainer2__controls--progressBar div {
+  width: 80%;
+  height: 10px;
+  background-image: linear-gradient(to right, #ffa399, #ff9092, #ff7b90, #ff6591, #ff4d97);
+  border-radius: 40px;
+  display: grid;
+  justify-items: end;
+  align-items: center;
+}
+.subContainer2__controls--progressBar div div {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+  margin-right: 2px;
+}
+
+.subContainer2__controls--infoDownload {
+  display: flex;
+  justify-content: space-between;
+}
+.subContainer2__controls--infoDownload strong {
+  color: #dddbff;
 }
 
 .containerFooter {

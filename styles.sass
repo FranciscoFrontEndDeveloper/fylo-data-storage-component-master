@@ -46,7 +46,7 @@ $FamilyRaleway:'Raleway', sans-serif
  align-self: start
  border-radius: 10px
 
-.subContainer1__controls, .subContainer2__controls
+.subContainer1__controls
  width: 90%
  height: 100%
  display: grid
@@ -57,7 +57,7 @@ $FamilyRaleway:'Raleway', sans-serif
   width: 60%
   grid-area: logo
  input
-  background: #000
+  background: $VeryDarkBlue
   padding: 10px
   border-radius: 8px
   width: 40px
@@ -68,6 +68,36 @@ $FamilyRaleway:'Raleway', sans-serif
   grid-area: folder
  input:nth-child(3)
   grid-area: upload
+
+.subContainer2__controls
+  display: grid
+  grid-template-rows: repeat(3,auto )
+  row-gap: 10px
+  p
+    color: $PaleBlue
+.subContainer2__controls--progressBar
+  background: $VeryDarkBlue
+  border-radius: 40px
+  padding: 2px 2px
+  div
+    width: 80%
+    height: 10px
+    background-image: linear-gradient(to right, #ffa399, #ff9092, #ff7b90, #ff6591, #ff4d97)
+    border-radius: 40px
+    display: grid
+    justify-items: end
+    align-items: center
+    div
+      width: 8px
+      height: 8px
+      border-radius: 50%
+      background: white
+      margin-right: 2px
+.subContainer2__controls--infoDownload
+  display: flex
+  justify-content: space-between
+  strong
+    color: $PaleBlue
 
 
 
