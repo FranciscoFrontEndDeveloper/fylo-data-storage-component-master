@@ -121,12 +121,56 @@ $FamilyRaleway:'Raleway', sans-serif
     font-size: 14px
 
 
+@media screen and ( min-width: 768px ) and (max-width: 1024px)
+  .main__containerChallenge
+    background-image: url('./images/bg-desktop.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    display: grid
+    justify-items: center
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr
+    align-content: center
+  .subContainer1, .subContainer2
+    align-self: center
+  .subContainer2
+    height: auto
+    margin-top: 40px
+  .subContainer3
+    bottom: 548px
+    left: 548px
 
-
-
-
-
-
+@media screen and ( min-width: 1025px ) and (max-width: 1920px)
+  .main__containerChallenge
+    background-image: url('./images/bg-desktop.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    display: grid
+    justify-items: center
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr
+    align-content: center
+    column-gap: 30px
+  .subContainer1, .subContainer2
+    align-self: center
+  .subContainer1
+    justify-self: end
+    width: 40%
+  .subContainer2
+    width: 60%
+    height: auto
+    margin-top: 20px
+    justify-self: start
+    padding-top: 50px
+  .subContainer3
+    bottom: 350px
+    left: 917px
+  .subContainer1__controls
+    row-gap: 30px
+    img
+      width: 40%
 
 
 
